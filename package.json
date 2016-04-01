@@ -1,0 +1,14 @@
+{
+  "name": "baseball-scrape-win-loss-data",
+  "version": "1.0.0",
+  "description": "Scrape win-loss data for many MLB seasons.",
+  "main": "scrape-year-by-year.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Derek Swingley",
+  "license": "MIT",
+  "dependencies": {
+    "x-ray": "^2.2.0"
+  }
+}
