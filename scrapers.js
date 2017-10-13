@@ -41,13 +41,13 @@ const getTeamSeasons = (teams, seasons, callback) => {
     const xraySeasons = (franchise) => {
       console.log('getting seasons...', franchise.all)
       xray(franchise.all, 'table#franchise_years tbody tr', [{
-        year: 'td:nth-child(2)',
-        seasonUrl: 'td:nth-child(2) a@href',
-        name: 'td:nth-child(3)',
-        league: 'td:nth-child(4)',
-        games: 'td:nth-child(5)',
-        wins: 'td:nth-child(6)',
-        losses: 'td:nth-child(7)'
+        year: 'th',
+        seasonUrl: 'th a@href',
+        name: 'td:nth-child(2)',
+        league: 'td:nth-child(3)',
+        games: 'td:nth-child(4)',
+        wins: 'td:nth-child(5)',
+        losses: 'td:nth-child(6)'
       }])((err, obj) => {
         if ( err ) { 
           console.log('err getting a season:  ', err) 

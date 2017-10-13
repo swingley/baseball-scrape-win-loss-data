@@ -1,0 +1,17 @@
+Updating baseball-sparklines for 2016.
+-new folder:  2016-season
+-copy in:  scrape-2016.js, scrapers.js, seasons-only.js, teams-only.js
+-node teams-only.js
+-node seasons-only.js 
+-node scrape-2016.js
+
+should have a "results-2016.json" file. Re-name as 2016.json, copy into local repo, commit, push to github.
+
+** modifed scrape-2016.js to ignore playoff games with this line:  obj = obj.slice(0, 162); // Ignore playoffs **
+
+--
+
+Updating for 2017.
+-changed selectors in teams-only.js to correctly get rows and cells with team names and URLs.
+-changed selectors in seasons-only.js to reflect modified table structure
+-changed selectors in scrape-2017.js to reflect modified table structure
